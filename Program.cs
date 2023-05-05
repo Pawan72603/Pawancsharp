@@ -4,19 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Constantvariable
+namespace StaticReadOnly
 {
     class Program
     {
-               const string name = "Pawan Kumar Chaurasiya";
-        static void Main(string[] args)
+        static Program()
         {
-            const int id = 7850;
-            const string designation= "Trainee";
-            const string full = name + designation;
-            
-            Console.WriteLine(full+" and havng Id No.:- " +id);
+            designation = "Trainee";
+        }
+        static readonly int Id=84;
+        static readonly string name = "Pawan Kumar Chaurasiya";
+        static readonly string designation = "";
+        static void Main()
+        {
+            Program obj = new Program();
+            Console.WriteLine(Program.name + "designation is " + Program.designation + " holding id is " + Program.Id);
             Console.ReadLine();
+
         }
     }
 }
