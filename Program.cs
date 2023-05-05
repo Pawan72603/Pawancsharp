@@ -4,20 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace @static
+namespace Constantvariable
 {
     class Program
     {
-        static int Salary;
-        static string name = "Pawan Kumar Chaurasiya";
-        static string designation = "";
-        static void Main()
+               const string name = "Pawan Kumar Chaurasiya";
+        static void Main(string[] args)
         {
-            Program.designation = "Trainee";
-            Program.Salary = 7850;
-            Console.WriteLine(Program.name + "  designation is " + Program.designation + "  and his salary is  " + Program.Salary);
+            const int id = 7850;
+            const string designation= "Trainee";
+            const string full = name + designation;
+            
+            Console.WriteLine(full+" and havng Id No.:- " +id);
             Console.ReadLine();
-
         }
     }
 }
