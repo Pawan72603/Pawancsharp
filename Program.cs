@@ -4,21 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StaticReadOnly
+namespace @static
 {
     class Program
     {
-        static Program()
-        {
-            designation = "Trainee";
-        }
-        static readonly int Id=84;
-        static readonly string name = "Pawan Kumar Chaurasiya";
-        static readonly string designation = "";
+        static int Salary;
+        static string name = "Pawan Kumar Chaurasiya";
+        static string designation = "";
         static void Main()
         {
-            Program obj = new Program();
-            Console.WriteLine(Program.name + "designation is " + Program.designation + " holding id is " + Program.Id);
+            Program.designation = "Trainee";
+            Program.Salary = 7850;
+            Console.WriteLine(Program.name + "  designation is " + Program.designation + "  and his salary is  " + Program.Salary);
             Console.ReadLine();
 
         }
