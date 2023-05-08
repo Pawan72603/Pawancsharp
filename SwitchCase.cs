@@ -82,7 +82,7 @@ namespace ConsoleApp1
 
                 Console.WriteLine();
                 Console.WriteLine("Do you want to run program again ? (y/n)");
-                string runAgain = Convert.ToString(Console.ReadLine());
+                string runAgain = Console.ReadLine();
 
                 if (runAgain == "n")
                 {
