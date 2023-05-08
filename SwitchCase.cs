@@ -41,22 +41,26 @@ namespace ConsoleApp1
                         break;
 
                     case "2":
-                        int res, flag = 0;
+                        int res=0;
                         Console.WriteLine("Prime number program-");
                         Console.Write("Enter the Number to check Prime: ");
                         number = int.Parse(Console.ReadLine());
-                        res = number / 2;
-                        for (i = 2; i <= res; i++)
+
+                        for (i = 1; i <= number; i++)
                         {
                             if (number % i == 0)
                             {
-                                Console.WriteLine("Number is not Prime.");
-                                flag = 1;
-                                break;
+                                res++;
                             }
                         }
-                        if (flag == 0)
+                        if (res == 2)
+                        {
                             Console.WriteLine("Number is Prime.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Number is not Prime.");
+                        }
                         break;
 
                     case "3":
