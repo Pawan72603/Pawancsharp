@@ -84,11 +84,11 @@ namespace ConsoleApp1
                 Console.WriteLine("Do you want to run program again ? (y/n)");
                 string runAgain = Console.ReadLine();
 
-                if (runAgain == "n")
+                if (runAgain == "n" || runAgain == "N")
                 {
                     break;
                 }
-                else if (runAgain != "y")
+                else if (runAgain != "y" || runAgain != "Y")
                 {
                     Console.Clear();
                     Console.WriteLine("Invalid selection.");
