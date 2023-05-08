@@ -6,8 +6,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            SwitchCase program = new SwitchCase();
-            program.CalculateProgram();
+            SwitchCase obj = new SwitchCase();
+            obj.CalculateProgram();
         }
 
         private void CalculateProgram()
